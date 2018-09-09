@@ -1,0 +1,58 @@
+.app {}
+
+.stage {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top_row {
+}
+
+.not_top_row {
+  margin-top: -25px;
+}
+
+.stage_row_odd {
+  display: flex;
+  margin-left: 50px;
+}
+
+.stage_row_even {
+  display: flex;
+}
+
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  background-color: #000000;
+  margin: 27px 0px 27px -2px;
+  border-left: solid 1px #ffffff;
+  border-right: solid 1px #ffffff;
+}
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 13.6447px;
+}
+.hexagon:before {
+  top: -35.3553px;
+  border-top: solid 1.4142px #ffffff;
+  border-right: solid 1.4142px #ffffff;
+}
+.hexagon:after {
+  bottom: -35.3553px;
+  border-bottom: solid 1.4142px #ffffff;
+  border-left: solid 1.4142px #ffffff;
+}
+
+
