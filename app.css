@@ -1,0 +1,15 @@
+.top_row {
+}
+
+.not_top_row {
+  margin-top: -25px;
+}
+
+.odd_row {
+  display: flex;
+  margin-left: 50px;
+}
+
+.even_row {
+  display: flex;
+}

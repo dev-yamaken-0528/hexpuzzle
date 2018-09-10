@@ -1,25 +1,7 @@
-.app {}
-
 .stage {
-  width: 400px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.top_row {
-}
-
-.not_top_row {
-  margin-top: -25px;
-}
-
-.stage_row_odd {
-  display: flex;
-  margin-left: 50px;
-}
-
-.stage_row_even {
-  display: flex;
 }
 
 .hexagon {

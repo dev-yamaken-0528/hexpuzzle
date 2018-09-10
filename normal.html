@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>normal</title>
+  <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="./normal.css">
+</head>
+<body>
+
+  <div id="app">
+    <input type="hidden" id="level" value="normal">
+    <div class="stage">
+
+      <div class="odd_row top_row">
+        <div id="0_0" class="hexagon" @click="clickhex"></div>
+        <div id="0_1" class="hexagon" @click="clickhex"></div>
+        <div id="0_2" class="hexagon" @click="clickhex"></div>
+        <div id="0_3" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="even_row not_top_row">
+        <div id="1_4" class="hexagon" @click="clickhex"></div>
+        <div id="1_5" class="hexagon" @click="clickhex"></div>
+        <div id="1_6" class="hexagon" @click="clickhex"></div>
+        <div id="1_7" class="hexagon" @click="clickhex"></div>
+        <div id="1_8" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="odd_row not_top_row">
+        <div id="2_9" class="hexagon" @click="clickhex"></div>
+        <div id="2_10" class="hexagon" @click="clickhex"></div>
+        <div id="2_11" class="hexagon" @click="clickhex"></div>
+        <div id="2_12" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="even_row not_top_row">
+        <div id="3_13" class="hexagon" @click="clickhex"></div>
+        <div id="3_14" class="hexagon" @click="clickhex"></div>
+        <div id="3_15" class="hexagon" @click="clickhex"></div>
+        <div id="3_16" class="hexagon" @click="clickhex"></div>
+        <div id="3_17" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="odd_row not_top_row">
+        <div id="4_18" class="hexagon" @click="clickhex"></div>
+        <div id="4_19" class="hexagon" @click="clickhex"></div>
+        <div id="4_20" class="hexagon" @click="clickhex"></div>
+        <div id="4_21" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="even_row not_top_row">
+        <div id="5_22" class="hexagon" @click="clickhex"></div>
+        <div id="5_23" class="hexagon" @click="clickhex"></div>
+        <div id="5_24" class="hexagon" @click="clickhex"></div>
+        <div id="5_25" class="hexagon" @click="clickhex"></div>
+        <div id="5_26" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="odd_row not_top_row">
+        <div id="6_27" class="hexagon" @click="clickhex"></div>
+        <div id="6_28" class="hexagon" @click="clickhex"></div>
+        <div id="6_29" class="hexagon" @click="clickhex"></div>
+        <div id="6_30" class="hexagon" @click="clickhex"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <ul>
+    <li><a href="easy.html">easy</a></li>
+    <li><a href="normal.html">normal</a></li>
+    <li><a href="hard.html">hard</a></li>
+  </ul>
+
+<script type="text/javascript" src="vue.min.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

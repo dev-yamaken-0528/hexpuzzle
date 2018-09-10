@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>easy</title>
+  <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="./easy.css">
+</head>
+<body>
+
+  <div id="app">
+    <input type="hidden" id="level" value="easy">
+    <div class="stage">
+
+      <div class="odd_row top_row">
+        <div id="0_0" class="hexagon" @click="clickhex"></div>
+        <div id="0_1" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="even_row not_top_row">
+        <div id="1_2" class="hexagon" @click="clickhex"></div>
+        <div id="1_3" class="hexagon" @click="clickhex"></div>
+        <div id="1_4" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="odd_row not_top_row">
+        <div id="2_5" class="hexagon" @click="clickhex"></div>
+        <div id="2_6" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="even_row not_top_row">
+        <div id="3_7" class="hexagon" @click="clickhex"></div>
+        <div id="3_8" class="hexagon" @click="clickhex"></div>
+        <div id="3_9" class="hexagon" @click="clickhex"></div>
+      </div>
+
+      <div class="odd_row not_top_row">
+        <div id="4_10" class="hexagon" @click="clickhex"></div>
+        <div id="4_11" class="hexagon" @click="clickhex"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <ul>
+    <li><a href="easy.html">easy</a></li>
+    <li><a href="normal.html">normal</a></li>
+    <li><a href="hard.html">hard</a></li>
+  </ul>
+
+<script type="text/javascript" src="vue.min.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
