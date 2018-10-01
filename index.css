@@ -2,26 +2,13 @@ body {
   background-color: #4D4D4D;
 }
 
-.top_row {
-}
-
-.not_top_row {
-  margin-top: -25px;
-}
-
-.odd_row {
-  display: flex;
-  margin-left: 50px;
-}
-
-.even_row {
-  display: flex;
-}
-
 .menu {
   text-align: center;
 }
 
+.title {
+  color: white;
+}
 
 a {
     display: inline-block;
@@ -38,11 +25,4 @@ a:active {
     transform: translateY(4px);
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     border-bottom: none;
-}
-
-.score {
-  text-align: center;
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
 }

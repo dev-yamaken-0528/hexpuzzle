@@ -2,10 +2,10 @@ var app = new Vue({
   el: '#app',
   data: {
     level: '',
-    rand_min: 1,
-    rand_max: 3,
+    rand: 3,
     row_max: 0,
     col_max: 0,
+    score: 0,
   },
   created: function(){
   },
@@ -21,6 +21,7 @@ var app = new Vue({
       this.col_max = 5
     }
     if(this.level == 'hard')  {
+      this.rand = 5
       this.row_max = 9
       this.col_max = 7
     }
@@ -31,7 +32,7 @@ var app = new Vue({
     for(var row_idx=0; row_idx<this.row_max; row_idx++){
       var t_col_max = ((row_idx%2)==0) ? (this.col_max-1) : this.col_max
       for(var col_idx=0; col_idx<t_col_max; col_idx++){
-        rand = Math.floor( Math.random() * (this.rand_max + 1 - this.rand_min) ) + this.rand_min
+        rand = Math.floor( Math.random() * (this.rand + 1 - 1) ) + 1
         document.getElementById( row_idx + '_' + colcount ).style.backgroundColor = this.bgcolor_by_rand( rand )
         colcount++
       } 
@@ -60,6 +61,7 @@ var app = new Vue({
         var hex_id = hex_id_list[i]
         if( document.getElementById( hex_id ) != null ){
           if( document.getElementById( hex_id ).style.backgroundColor == sel_color ){
+            this.score++
             this.set_rand_color( hex_id )
             this.adjacent_hex( hex_id, sel_color )
           }
@@ -67,14 +69,21 @@ var app = new Vue({
       }
     },
     set_rand_color: function( target ){
-      var rand = Math.floor( Math.random() * (this.rand_max + 1 - this.rand_min) ) + this.rand_min
+      var rand = Math.floor( Math.random() * (this.rand + 1 - 1) ) + 1
       document.getElementById( target ).style.backgroundColor = this.bgcolor_by_rand( rand )
     },
     bgcolor_by_rand(rand){
       var bgcolor = ''
-      if(rand == 1){ bgcolor = 'red' }
-      if(rand == 2){ bgcolor = 'blue' }
-      if(rand == 3){ bgcolor = 'green' }
+      //if(rand == 1){ bgcolor = '#C6CAED' }
+      //if(rand == 2){ bgcolor = '#ADA8BE' }
+      //if(rand == 3){ bgcolor = '#A28497' }
+      //if(rand == 4){ bgcolor = '#6F5E5C' }
+      //if(rand == 5){ bgcolor = '#4A5240' }
+      if(rand == 1){ bgcolor = '#644536' }
+      if(rand == 2){ bgcolor = '#b2675e' }
+      if(rand == 3){ bgcolor = '#c4a381' }
+      if(rand == 4){ bgcolor = '#bbd686' }
+      if(rand == 5){ bgcolor = '#eef1bd' }
       return bgcolor
     }
   },
